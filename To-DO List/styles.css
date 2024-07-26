@@ -1,0 +1,125 @@
+/* DECLARING A VARIABLE COLOR  */
+:root {
+  --text-color: #001858;
+}
+
+/* Resetting the area for easy control later on */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* main container or the body itself */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f3d2c1, #fef6e4);
+  padding: 10px;
+}
+
+/* centering the main container for the adding task */
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 20px;
+}
+
+/* align the h2 tag using flex and centering it vertically */
+.todo-app h2 {
+  display: flex;
+  color: var(--text-color);
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* since it is a child of h2 the flex was picked up by img and aligning it together to h2 */
+.todo-app h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+/* this will act as an input textfield  */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(360deg, #fef6e4, #f3d2c1);
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  color: var(--text-color);
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #f582ae;
+  color: var(--text-color);
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 40px;
+  font-weight: bold;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  line-height: 28px;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(images/checked.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--text-color);
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: #f3d2c1;
+}

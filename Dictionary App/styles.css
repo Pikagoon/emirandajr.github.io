@@ -1,0 +1,127 @@
+:root {
+  --main-bg: #4e515a;
+  --section-bg: #fef6e4;
+  --text-color: #27324d;
+  --button-color: #608099;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*:not(i) {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--main-bg);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 300px auto;
+}
+
+.header h1 {
+  color: #f8f5f2;
+  text-transform: uppercase;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background-color: var(--section-bg);
+  width: 90vmin;
+  position: absolute;
+  transform: translate(-50%, -20%);
+  top: 50%;
+  left: 50%;
+  padding: 80px 50px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-box input {
+  padding: 5px;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid var(--button-color);
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 15px 0;
+  width: 25%;
+  background-color: var(--button-color);
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.search-box button:hover {
+  cursor: pointer;
+  background-color: #314755;
+}
+
+.result {
+  position: relative;
+}
+
+.result h3 {
+  font-size: 30px;
+  color: var(--text-color);
+}
+
+.result .word {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.result button {
+  background-color: transparent;
+  color: var(--button-color);
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.result button:hover {
+  cursor: pointer;
+  color: #314755;
+}
+
+.result .details {
+  display: flex;
+  gap: 10px;
+  color: var(--text-color);
+  margin: 5px 0 20px 0;
+  font-size: 14px;
+}
+
+.word-meaning {
+  color: var(--text-color);
+}
+
+.word-example {
+  color: var(--text-color);
+  font-style: italic;
+  border-left: 5px solid var(--text-color);
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+.error {
+  margin-top: 80px;
+  text-align: center;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>FCC Product Landing Page</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <div class="logo-container">
+          <img
+            src="https://st4.depositphotos.com/8301258/24459/v/450/depositphotos_244597574-stock-illustration-book-store-vector-icon.jpg"
+            alt="this is an open book for logo"
+            id="header-img"
+          />
+          <span class="the-product">Classic Books</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#audio" class="nav-link">Free Audio Book</a></li>
+          <li><a href="#for_sale" class="nav-link">For Sale</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="email-section">
+      <h2>Beautifully Written Masterpieces</h2>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          required
+          name="email"
+          id="email"
+        />
+        <input type="submit" id="submit" value="GET STARTED" />
+      </form>
+    </section>
+
+    <section id="features">
+      <div class="feature">
+        <i class="ri-file-paper-fill ri-4x icon"></i>
+        <div>
+          <h2>Premium Materials</h2>
+          <p>
+            Our Books use the best paper which is sourced increase the longevity
+            of your purchase.
+          </p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="ri-truck-fill ri-4x icon"></i>
+        <div>
+          <h2>1 Day Shipping</h2>
+          <p>
+            We make sure you received your classic book as soon as possible so
+            that you can start reading immediately. We also provide free returns
+            if you are not satisfied.
+          </p>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="ri-book-open-fill ri-4x icon"></i>
+        <div>
+          <h2>Quality Books Only</h2>
+          <p>
+            We make sure to only provide awesome classic books. We guarantee
+            that the book you buy is one of the top classic books on the
+            internet.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="audio">
+      <iframe
+        id="video"
+        height="400"
+        src="https://www.youtube.com/embed/kw1k-LDIgck?si=aAfY3wlFDwgvgWqI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      >
+      </iframe>
+    </section>
+    <section id="for_sale">
+      <h2>For Sale</h2>
+      <div class="product-cards">
+        <!-- BOOK ONE -->
+        <div class="card">
+          <div class="product-image product1"></div>
+          <div class="inner-card">
+            <div class="author">Yann Martel</div>
+
+            <h1 class="header">Life of Pi</h1>
+            <p class="content">
+              Canadian author Yann Martel wrote Life of Pi in 2001. The fantasy
+              novel revolves around a teenage Indian boy, Pi, who becomes lost
+              at sea after a shipwreck. Pi finds himself struggling for survival
+              against the torrential ocean with his only companion, a Bengal
+              tiger.
+            </p>
+
+            <div class="flex">
+              <p class="main-price">PHP 943.55</p>
+              <p class="old-price">PHP 1128.97</p>
+            </div>
+
+            <button class="add">
+              <p style="margin-left: 5px">Add to Card</p>
+            </button>
+          </div>
+        </div>
+
+        <!-- BOOK TWO  -->
+        <div class="card">
+          <div class="product-image product2"></div>
+          <div class="inner-card">
+            <div class="author">Frank Herbert</div>
+
+            <h1 class="header">Dune</h1>
+            <p class="content">
+              Set on the desert planet Arrakis, Dune is the story of the boy
+              Paul Atreides, heir to a noble family tasked with ruling an
+              inhospitable world where the only thing of value is the “spice”
+              melange, a drug capable of extending life and enhancing
+              consciousness.
+            </p>
+
+            <div class="flex">
+              <p class="main-price">PHP 1953.58</p>
+              <p class="old-price">PHP 2839.00</p>
+            </div>
+
+            <button class="add">
+              <p style="margin-left: 5px">Add to Card</p>
+            </button>
+          </div>
+        </div>
+
+        <!-- BOOK THREE -->
+        <div class="card">
+          <div class="product-image product3"></div>
+          <div class="inner-card">
+            <div class="author">Isaac Marion</div>
+
+            <h1 class="header">Warm Bodies</h1>
+            <p class="content">
+              In Warm Bodies, Isaac Marion's New York Times bestselling novel
+              that inspired a major film, a zombie returns to humanity through
+              an unlikely encounter with love. “R” is having a no-life crisis—he
+              is a zombie. He has no memories, no identity, and no pulse, but he
+              is a little different from his fellow Dead.
+            </p>
+
+            <div class="flex">
+              <p class="main-price">PHP 1138.92</p>
+              <p class="old-price">PHP 1752.85</p>
+            </div>
+
+            <button class="add">
+              <p style="margin-left: 5px">Add to Card</p>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </body>
+</html>
